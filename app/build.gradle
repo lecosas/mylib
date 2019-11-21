@@ -1,6 +1,10 @@
 apply plugin: 'com.android.library'
 apply plugin: 'maven'
 
+apply plugin: 'com.github.dcendents.android-maven'
+
+group='com.github.lecosas'
+
 apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
@@ -23,7 +27,7 @@ android {
     }
 }
 
-uploadArchives {
+/*uploadArchives {
     repositories {
         mavenDeployer {
             repository(url: "file:///C:/rep/")
@@ -33,7 +37,7 @@ uploadArchives {
         }
     }
 }
-task install(dependsOn: uploadArchives)
+task install(dependsOn: uploadArchives)*/
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
