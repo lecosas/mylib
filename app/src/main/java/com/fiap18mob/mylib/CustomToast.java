@@ -18,7 +18,7 @@ public class CustomToast {
         Toast customToast = new Toast(context);
 
         customToast.setView(customToastRoot);
-        TextView textView = (TextView) customToastRoot.findViewById(R.id.textView1);
+        TextView textView = customToastRoot.findViewById(R.id.textView1);
         textView.setText(message);
         customToast.setGravity(Gravity.CENTER_HORIZONTAL | Gravity.BOTTOM, 0, 0);
         customToast.setDuration(Toast.LENGTH_LONG);
